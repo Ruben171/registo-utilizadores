@@ -1,4 +1,4 @@
-from .utils import verificar_idade
+from .utils import verificar
 
 def main():
     utilizadores = []
