@@ -20,3 +20,13 @@ def contacto():
       "telefone": "912345678"
   }
 
+@app.get("/tecnologias")
+def tecnologias():
+    return {
+        "tecnologias": ["Python", "FastAPI", "Git", "VS Code"]
+    }
+
+@app.get("/saudar/{nome}")
+def saudar (nome: str):
+    return {"mensagem": f"Olá, {nome}!"}
+         
